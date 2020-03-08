@@ -5,7 +5,7 @@ Traffic Engineering For Measuring Traffic Count Using Python and OpenCV
 
 ## Abstract
 
-The Project is about detecting the road occupancy from using Python and OpenCV The Traffic Control has been one of the most prominent global issues. Some of the problems were measuring traffic size and road occupancy. To solve this problem, the concept of smart traffic control system was introduced. Smart traffic control system, as the name suggests, is about applying the concepts of artificial intelligence (Edge based, Cloud based or hybrid) and using sensors and camera to improve the efficiency of the traffic control with little human intervention required. Our project focuses on delivering such a system by enabling dynamic control of the traffic signal based on the number of cars moving. 
+The Project is about detecting the road occupancy from using Python and OpenCV. The Traffic Control has been one of the most prominent global issues. Some of the problems were measuring traffic size and road occupancy. To solve this problem, the concept of smart traffic control system was introduced. Smart traffic control system, as the name suggests, is about applying the concepts of artificial intelligence (Edge based, Cloud based or hybrid) and using sensors and camera to improve the efficiency of the traffic control with little human intervention required. Our project focuses on delivering such a system by enabling dynamic control of the traffic signal based on the number of cars moving. 
 
 ![central idea](https://user-images.githubusercontent.com/55000923/76172472-a06e8980-6153-11ea-9624-eab6c662c2de.png)
 
@@ -20,8 +20,10 @@ This project is built around the concept of calculating dimension of vehicle cou
 
 ### Vehicle Dimension Detection:
 
-We use Python with OpenCV video stream for automatic vehicle detection and vehicle counting and connecting it to Intel OpenVino Toolkit in order to optimize the model. 
+We have used Python and OpenCV in video streaming for automatic vehicle detection and vehicle counting and connecting it to Intel OpenVino Toolkit in order to optimize the model. 
+
 Mounted cameras will scan the area for all vehicle’s movement and it will take their dimensions in real time. The background of Images taken from video sequence are extracted. The extracted background is used in subsequent analysis to detect and classify moving vehicles as light vehicles, heavy vehicles and motorcycle. Then it will relay the information to the other adjacent sensors and help them predict the target’s next movement. Finally the information is then transferred to the nearest station for further processing.
+
 The system is implemented using OpenCV image development kits and experimental results are demonstrated from real-time video taken from single camera.   This highway traffic counting process has been developed by background subtraction, image filtering, image binary and segmentation methods are used. This system is also capable of counting moving vehicles from pre-recorded videos.
 
 ## WORKING MECHANISM
