@@ -21,12 +21,15 @@ This project is built around the concept of calculating dimension of vehicle cou
 ### Vehicle Dimension Detection:
 
 We use Python with OpenCV video stream for automatic vehicle detection and vehicle counting and connecting it to Intel OpenVino Toolkit in order to optimize the model. 
+
 Mounted cameras will scan the area for all vehicle’s movement and it will take their dimensions in real time. The background of Images taken from video sequence are extracted. The extracted background is used in subsequent analysis to detect and classify moving vehicles as light vehicles, heavy vehicles and motorcycle. Then it will relay the information to the other adjacent sensors and help them predict the target’s next movement. Finally the information is then transferred to the nearest station for further processing.
-The system is implemented using OpenCV image development kits and experimental results are demonstrated from real-time video taken from single camera.   This highway traffic counting process has been developed by background subtraction, image filtering, image binary and segmentation methods are used. This system is also capable of counting moving vehicles from pre-recorded videos.
+
+The system is implemented using OpenCV image development kits and experimental results are demonstrated from real-time video taken from single camera. This highway traffic counting process has been developed by background subtraction, image filtering, image binary and segmentation methods are used. This system is also capable of counting moving vehicles from pre-recorded videos.
 
 ## WORKING MECHANISM
 
 The project is basically designed to work on edge device systems. which is connected on two areas, one is towards camera and second is towards sensors. From there it will take input and the output will be created in the form of images shown above. In the input it will be the vehicles' captured by the cameras. Anywhere on the road the car is presented it will move the lights towards that end.   Our model is deployed on edge applications (with cloud system used as backup in case of errors and connectivity issues) .
+
 The project can also use popular cloud-based services like Google maps to give the passengers and custom cloud-based tracking apps to give police officers information regarding the state of a traffic route and the target vehicle using the data taken from the traffic camera in order to maintain smooth traffic flow and capture suspicious vehicles.
 
 ## Results
